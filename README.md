@@ -76,6 +76,34 @@ Structured using the McKinsey **SCR framework**:
 
 ---
 
+## Live Dashboard
+
+The interactive Power BI dashboard covers three analytical 
+layers:
+
+| Page | Content |
+|---|---|
+| **Overview** | Revenue trend 2016–2018, KPI scorecards, new vs. returning revenue split, purchase frequency, geographic map |
+| **Driver Analysis** | Delivery performance vs. frequency group, installment tier table, category revenue by purchase frequency |
+| **Portfolio & Customer Analysis** | RFM lifecycle segment distribution, BCG category matrix, revenue by segment × category |
+
+[![Power BI Dashboard](assets/dashboard_preview.png)](https://admin.onhandbi.com/user/report/TVRVNU53PT0=)
+
+<img width="1448" height="817" alt="image" src="https://github.com/user-attachments/assets/09890ca1-0a75-4a88-b32e-fae23dca9304" />
+<img width="1450" height="818" alt="image" src="https://github.com/user-attachments/assets/f6d7ff11-0d02-4a83-ab96-c7c37ab04c1a" />
+<img width="1517" height="854" alt="image" src="https://github.com/user-attachments/assets/216e2e3b-30f0-4f6a-b3ce-25b30553649a" />
+
+
+🔗 **[Open Live Dashboard](https://admin.onhandbi.com/user/report/TVRVNU53PT0=)**
+
+> **How to use:** Navigate between pages using the tabs at 
+> the top of the dashboard. Use the year filter buttons 
+> (2016 / 2017 / 2018) to isolate individual years. 
+> Cross-filtering is enabled — clicking any visual filters 
+> all others on the page.
+
+---
+
 ## Data Source
 
 **Dataset:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)  
