@@ -10,6 +10,16 @@ relational tables into a boardroom-ready strategic recommendation.
 
 ---
 
+## Live Dashboard
+
+[![Power BI Dashboard Preview](assets/dashboard_preview.png)](https://admin.onhandbi.com/user/report/TVRVNU53PT0=)
+
+> 🔗 **[View Interactive Dashboard →](https://admin.onhandbi.com/user/report/TVRVNU53PT0=)**  
+> Built in Power BI · 3 pages: Overview · Driver Analysis · 
+> Portfolio & Customer Analysis
+
+---
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Business Problem](#business-problem)
