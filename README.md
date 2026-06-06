@@ -94,7 +94,7 @@ Structured using the McKinsey **SCR framework**:
   products, reviews, sellers, geolocation
 - Resolved null values in delivery timestamps and 
   product category fields
-- Built derived measures in DAX: `frequency_group`, 
+- Built derived measures: `frequency_group`, 
   `delivery_status`, `installment_tier`, 
   `rfm_segment`, `returning_customer_flag`
 - Validated customer identifier logic: confirmed 
@@ -290,6 +290,8 @@ additional GMV** within 12 months.
 
 | Tool | Purpose |
 |---|---|
+| **SQL** | Crawl and clean Data (BeautifulSoup, Pandas, Numpy). |
+| **Python** | Do basic query to have a first rough big picture of data |
 | **Power BI Desktop** | 3-page interactive dashboard with cross-filtering |
 | **DAX** | Custom measures: RFM scoring, frequency grouping, returning customer flag, installment tier, revenue segmentation |
 | **Power Query** | Data joins across 9 relational tables, null handling, type standardisation |
