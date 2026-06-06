@@ -8,6 +8,8 @@ development with a McKinsey SCR-structured consulting
 presentation, translating 99K transactions across 9 
 relational tables into a boardroom-ready strategic recommendation.
 
+**This project includes: A PowerBI Dashboard, a Consulting Slide Deck, a Python Analyzing File
+
 ---
 
 ## Live Dashboard
