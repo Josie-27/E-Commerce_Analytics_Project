@@ -5,7 +5,7 @@ An end-to-end analytics project investigating the structural
 retention failure of Olist, a Brazilian e-commerce platform, 
 across 2016–2018. The project combines Power BI dashboard 
 development with a McKinsey SCR-structured consulting 
-presentation — translating 99K transactions across 9 
+presentation, translating 99K transactions across 9 
 relational tables into a boardroom-ready strategic recommendation.
 
 ---
@@ -34,7 +34,7 @@ acquisition growth cannot solve:
 > **96.95% of customers purchased only once.**
 
 Returning buyers represent just 3.05% of the customer base 
-yet generate **6.93% of total GMV** — more than twice 
+yet generate **6.93% of total GMV**, more than twice 
 the revenue per customer compared to first-time buyers. 
 The $18M gap between new-customer revenue ($19M) and 
 returning-customer revenue ($1M) is not a product problem 
@@ -53,16 +53,16 @@ additional GMV** within 12 months.
 
 **Central question:**
 > *"How can Olist convert its acquisition engine into a 
-> retention engine — and what is the quantified revenue 
+> retention engine, and what is the quantified revenue 
 > impact of doing so?"*
 
 Structured using the McKinsey **SCR framework**:
 
 | Layer | Statement |
 |---|---|
-| **Situation** | Olist achieved exponential growth — $14.27M revenue, 99K orders, $206.93 AOV — driven by an aggressive acquisition engine across 27 states |
+| **Situation** | Olist achieved exponential growth *$14.27M revenue, 99K orders, $206.93 AOV) driven by an aggressive acquisition engine across 27 states |
 | **Complication** | Revenue plateaued from early 2018; 96.95% single-purchase rate and 65%+ revenue concentration in SP + RJ expose a high-CAC "leaky bucket" with no retention mechanism |
-| **Resolution** | Three targeted initiatives — RFM lifecycle program, installment loyalty rewards, category-specific retention plays — to reach 6% returning-buyer share within 12 months |
+| **Resolution** | Three targeted initiatives (RFM lifecycle program, installment loyalty rewards, category-specific retention plays) to reach 6% returning-buyer share within 12 months |
 
 ---
 
@@ -75,9 +75,9 @@ Structured using the McKinsey **SCR framework**:
 
 > **Important data model note:** The dataset contains two 
 > customer identifiers. `customer_id` is **order-level** 
-> — a new ID is generated per transaction regardless of 
+> , a new ID is generated per transaction regardless of 
 > buyer identity (99K). `customer_unique_id` is 
-> **person-level** — it tracks the same buyer across 
+> **person-level**, it tracks the same buyer across 
 > multiple orders (92K unique buyers). All retention 
 > analysis in this project uses `customer_unique_id` 
 > as the true identifier. The 7K delta between the two 
@@ -105,17 +105,17 @@ Structured using the McKinsey **SCR framework**:
 - Monthly revenue trend 2016–2018: growth trajectory, 
   2018 plateau, November 2017 Black Friday spike
 - Geographic revenue distribution: SP (~42%), RJ (~13%), 
-  MG, RS, PR — 65%+ concentration in two states
+  MG, RS, PR. 65%+ concentration in two states
 - KPI scorecard: Total Revenue $14.27M (+117.1%), 
   Orders 99K (+119.8%), AOV $144.66, 27 states reached
 
-### 3. Diagnostic Analysis — Hypothesis Testing (Complication)
+### 3. Diagnostic Analysis, Hypothesis Testing (Complication)
 
 Three leading hypotheses were tested and falsified:
 
 | Hypothesis | Evidence | Verdict |
 |---|---|---|
-| Delivery delays drive churn | 73.54% of 1× buyers received on-time delivery; mean delay for churned (−11.73 days) ≈ mean delay for returned (−12.82 days) — no meaningful difference | ✕ Ruled out |
+| Delivery delays drive churn | 73.54% of 1× buyers received on-time delivery; mean delay for churned (−11.73 days) ≈ mean delay for returned (−12.82 days) = no meaningful difference | ✕ Ruled out |
 | Product longevity explains single-purchase | Single-purchase rate equally high in both short-lifecycle (Health Beauty, Stationery) and long-lifecycle (Furniture, Computers) categories | ✕ Ruled out |
 | Geographic gaps limit retention | Single-purchase rate uniformly high across all 27 states; no state deviates more than 2 standard deviations from national average | ✕ Ruled out |
 
@@ -159,8 +159,8 @@ potential (x-axis) vs. total revenue (y-axis):
 
 | Quadrant | Categories | Action |
 |---|---|---|
-| **Stars** | Computer Accessories, Furniture Decor, Sports Leisure | Prioritise — highest LTV compounding |
-| **Cash Cows** | Bed Bath Table, Health Beauty | Harvest — introduce replenishment model |
+| **Stars** | Computer Accessories, Furniture Decor, Sports Leisure | Prioritise = highest LTV compounding |
+| **Cash Cows** | Bed Bath Table, Health Beauty | Harvest = introduce replenishment model |
 | **Question Marks** | Furniture Bedroom, Drinks | Test and learn |
 | **Dogs** | Book Technical, Marketplace | De-prioritise |
 
@@ -174,7 +174,7 @@ potential (x-axis) vs. total revenue (y-axis):
 | **10×** | **7.85%** | **15.90%** | **2.03×** |
 
 10× installment buyers generate **2.03× more revenue 
-per order** than 1× buyers — the strongest single 
+per order** than 1× buyers, the strongest single 
 LTV signal available at point of sale.
 
 ---
@@ -183,10 +183,10 @@ LTV signal available at point of sale.
 
 **Growth:**
 - Total revenue $14.27M across 2016–2018; 119.4% YoY 
-  growth rate — but plateau visible from January 2018 
+  growth rate, but plateau visible from January 2018 
   onward for 8 consecutive months
 - November 2017 revenue spike (+35% above trend) driven 
-  by Black Friday — seasonal dependency, not 
+  by Black Friday, meaning seasonal dependency, not 
   organic demand
 
 **Retention problem:**
@@ -302,18 +302,14 @@ additional GMV** within 12 months.
 
 **Current limitations:**
 - Hypothesis rejections are descriptive, not 
-  inferential — formal statistical testing 
+  inferential. Formal statistical testing 
   (chi-square on delivery vs. return rate; 
   logistic regression on churn predictors; 
   ANOVA across states) would strengthen 
   diagnostic claims before production use
 - No customer contact data, campaign history, 
-  or NPS scores available — retention initiatives 
+  or NPS scores available. Retention initiatives 
   cannot be A/B tested within this dataset
-- AOV figure discrepancy: dashboard shows $144.66 
-  (likely order-level average); consulting deck 
-  shows $206.93 (likely GMV / unique buyer basis) 
-  — both are noted and sourced transparently
 
 **Future extensions:**
 - Build a churn prediction model using logistic 
